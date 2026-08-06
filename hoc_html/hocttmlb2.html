@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p>xem tài liệu <a href="https://fap.fpt.edu.vn/" target="_self" title="link sang web trường">here</a></p>
+    <!-- một số thuộc tính
+     -target 
+     target = blank thì sẽ mở url ở 1 tab khác
+     target = self thì mở url ở ngay tab hiện tại
+     -tittle
+     mô tả cho element
+    -->
+    <img src="https://i.pinimg.com/474x/94/7e/db/947edbbf6ced34863fc8702ed29ef79f.jpg" alt="anh con meo">
+    <!-- <img src="images/cat.jpg" alt=""> -->
+    <!-- 
+     src : nguon : có thể là link trên mạng(tuyệt đối) hoặc link tương đối là file ảnh trong máy
+     alt : mô tả ảnh
+     -->
+    <a href="https://blog.28tech.com.vn/"><img src="https://cdn-blog.28tech.com.vn/media/core/logo/favicon.png"
+            alt=""></a>
+
+    <video width="320" height="240" controls loop muted>
+        <source src="video/noitienganh.mp4" type="video/mp4">
+    </video>
+
+    <!-- 
+     width height để chỉnh kích cỡ video
+     thuộc tính controls để điều khiển được video như tăng giảm âm lượng, tua,...
+     loop để video lặp lại liên tục
+     autoplay : load lại trang thì video sẽ tự chạy (trình duyệt ban tính năng này r) nếu muốn sử dụng thì phải thêm thuộc tính muted
+     -->
+
+    <audio controls muted>
+        <source src="audio/Lay you down - TRLY2Smoove.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 
+     phần type audio/mpeg(chính là mp3);
+     -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th>Số điện thoại</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>0906275165</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>0903785738</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 
+     trong table
+     sẽ có thead
+     là phần đầu của bảng
+     tbody
+     bên trong tbody 
+     sẽ có từng tr(là từng hàng)
+     bên trong từng hàng sẽ có td (table data)
+     là 
+     -->
+     <ul>
+        <li>muc 1</li>
+        <li>muc 2</li>
+        <li>muc 3</li>
+     </ul>
+
+    <ol type="I">
+        <li>muc 1</li>
+        <li>muc 2</li>
+        <li>muc 3</li>
+    </ol>
+    <!-- 
+    type i : số la mã in thường
+    type I : số la mã in hoa
+    type A : dùng chữ cái in hoa
+    type a : dùng chữ cái in thường
+    type 1 : mặc định
+    -->
+    <p>xin chao 1</p>
+    <p>xin chao 2</p>
+    <b>xin chao 1</b>
+    <b>xin chao 2</b>
+    <!-- phần tử cấp độ inline không được chứa phần tử block 
+     thẻ inline chỉ chứa dữ liệu (text) và các phần tử inline khác
+     block thì có thể chứa được inline
+     thẻ a là thẻ inline nhưng có thể chứa được block (đây là trường hợp ngoại lệ)
+     
+
+    -->
+    
+</body>
+</html>

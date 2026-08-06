@@ -1,0 +1,113 @@
+
+
+        /* nếy muốn tất cả các thành phần html bị thay đổi thì dùng bộ chọn tất cả "*{}" */
+
+        /* mot so thuoc tinh background */
+     
+        .image-1 {
+            width: 720px;
+            height: 360px;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWoazEobVeEJMC6TX4iJZ8N5-QZtiBUU8Yw&s);
+
+            /* cái nào viết trước thì cái đó nằm trên cùng */
+            background-size:contain;
+            
+            /* chieu rong , chieu dai : nếu sử dụng đơn vị 
+            contain : làm cho ảnh nằm trọn vẹn trong element làm cho ảnh không bị vỡ , ảnh sẽ phình ra cho đến khi chạm đến bất cứ cạnh nào của khối bên ngoài thì dừng lại
+
+            cover : làm cho ảnh năm vừa đúng với tỉ lệ khung (cắt luôn những phần thừa của ảnh sao cho đúng với tỉ lệ, vừa in với khung.
+            */
+
+            background-repeat: no-repeat;
+            /* 
+            no repeat : không lặp lại ảnh
+            repeat-x : lặp theo chiều ngang
+            repeat-y : lặp theo chiều dọc
+            */
+            border: solid 9px black;
+            background-position: bottom center;
+
+            /* 
+            mặc định cú pháp sẽ là x đơn vị vị trí y đơn vị vị trí
+            nếu không để x y ví dụ là top left, thì x y ở đây là 0
+            vd apx top bpx right
+            =>cách top a px
+            =>cách right b px
+            center center là chính giữa màn hình
+            */
+
+            /* 
+            cú pháp viết ngắn 
+            background : màu + url + repeat? + vị trí
+            nên viết tách
+            */
+
+            background-attachment: fixed;
+            background-origin: padding-box;
+            /* 
+            background-origin : content-box : chỉ chiếm phần content
+            padding-pox : chiếm phần padding
+            border-box : mặc định, chiếm hết cả khôis ở trong, border sẽ đè lên cả background
+
+            */
+            
+        }
+
+        .image-2 {
+            width: 1000px;
+            height: 360px;
+            background-image: linear-gradient(0deg,blue,green);
+            /* 0deg mặc định : thì màu 1 đến màu 2 sẽ là từ dưới lên trên */
+            background-size: 100% auto;
+
+        }
+
+        .box-model1 {
+            padding:50px ; 
+            /* áp dụng cho cả 4 lề là 50px */
+            margin: 100px;
+            border: solid black 10px;
+            text-align: center;
+
+
+            /* 
+            border :
+            dotted : đường viền có dấu chấm
+            solid : đường viền liền 
+            dashed : đường viền nét đứt
+            none : không có đường viền
+
+
+            padding : 
+            top bottom left right : dễ r không cần giải thích
+
+            nếu viết là padding : apx bpx
+            cách trên dưới a px
+            cách trái phải b px
+
+            margin : 
+            top bottom left right : cũng dễ r không cần giải thích
+            giả sử khối A margin bottom 100px
+            khối B margin top 200px
+            thì A và B sẽ cách nhau theo chiều dọc 200px
+            =>> sẽ ăn theo khối lớn hơn
+            */
+        }
+
+        .box1 {
+            text-align: center;
+            padding : 30px 30px;
+            margin-top : 20px;
+
+            border : 20px dashed;
+            background-color: cadetblue;
+
+            background-clip:content-box;
+            /* 
+            background-clip : 
+            content-box : đổ màu phần content
+            padding-box : dổ màu phần padding
+            border-box : đổ màu hết phần border
+
+            */
+        }

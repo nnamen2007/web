@@ -1,0 +1,54 @@
+.box {
+    background-color: rgb(85, 53, 31);
+    width: 50vw;
+    height: 50vh;
+    margin : 50px;
+    padding: 20px;
+    border: 5px solid ;
+    box-sizing: border-box;
+    text-align: justify;
+    border-radius: 12px;
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 400px;
+    color : white;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    
+    /* height : chiều cao của content-box : mặc định
+    khi dùng box-sizing : border box => chiều cao = cả border box
+
+    cần lưu ý padding không được vượt quá chiều cao
+    padding * 2 + content <= height
+    vw : viewwidth : chiều rộng màn hình,
+    xvw : là x% chiều rộng màn hình
+
+    min, max width/height để xử lí khi ta thay đổi kích cỡ màn hình đến ngưỡng đúng min, max thì box sẽ không thay đổi nữa
+
+    ----------------------------
+    text-tranform : lowercase (viết thường tất cả)
+    text-transform : uppercase (viết hoa tất cả chữ cái)
+    text-transform : capitalize (viết hoa chữ cái đầu)
+
+    ------------------------
+    font-family : 
+    serif : là font có chân
+    san-serif: là font không có chân
+    font-style : 
+    normal : bth
+    italic : nghiêng
+    font-weight : (độ dày của chữ)
+    normal,bold,100,200,300,..
+    giá trị càng cao thì chữ càng dày
+
+    */
+}
+
+.fa-facebook {
+    color: blue;
+    font-size: large;
+}
+

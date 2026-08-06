@@ -1,0 +1,205 @@
+/* header */
+.header-top {
+    background-color: var(--color-main);
+    font-size : 17.6px;
+    text-align: center;
+    color: var(--color-yellow);
+    padding : 6.4px 16px;
+    
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+}
+.header-main ul {
+    display: flex;
+}
+
+.header-main ul li {
+    list-style-type : none;
+    
+}
+
+ .header-main .nav-bar-support {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-main .nav-bar-support h4 {
+    color: var(--color-letter);
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+
+.header-main ul li a {
+    text-decoration: none;
+    display : block;
+    margin : 12px 10px 12px 10px;
+    padding-left : 5px;
+    padding-right : 5px;
+    color : var(--color-main);
+    font-size: 17.6px;
+}
+
+.header-main ul li a:hover {
+    color : #47B5ED;
+    transition: 0.s;
+}
+.header-main .nav-brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+
+}
+
+.header-main .nav-brand a {
+    text-decoration: none;
+    font-size: 22.4px;
+    color: var(--color-main);
+    font-weight: 700;
+
+}
+
+.header-main .nav-brand {
+    display: flex;
+    align-items: center;
+    gap : 15px;
+}
+
+.header-main .nav-bar-support .icon-menu {
+    padding-left : 16px;
+    padding-right : 16px;
+}
+
+.header-main .nav-bar-support .icon-menu i {
+    font-size: 24px;
+    color : var(--color-main);
+    padding : 8px;
+
+}
+
+/* end header */
+
+/* Section 1 */
+.section-1{
+    display: flex;
+    background-color: var(--color-one);
+    justify-content: space-between;
+
+}
+
+.section-1 .image-and-price-wrapper {
+    padding : 0px 16px;
+    position: relative;
+}
+
+.section-1 .image-and-price-wrapper img {
+    width : 100%;
+    object-fit: cover;
+
+}
+
+.section-1 .text-wrapper h1{
+    font-size: 60.8px;
+    color: var(--color-main);
+}
+
+.section-1 .text-wrapper p {
+    font-size: 22.4px;
+    margin : 0px 0px 32px;
+}
+
+.section-1 .text-wrapper {
+    width: 60%;
+    padding : 0px 16px;
+}
+
+
+.section-1 .text-and-icon-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.section-1 .text-and-icon-wrapper .inner-text-icon {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color : var(--color-letter);
+    font-size: 17.6px;
+    
+}
+
+.inner-text-icon .icon {
+    padding-right : 12.8px;
+    font-size: 16px;
+
+}
+
+.price  {
+    position:absolute;
+    width:140px;
+    height: 140px;
+    border : none;
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+    right : 20%;
+    top : 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price .circle-content {
+    text-align: center;
+}
+
+
+.button {
+    margin-top : 16px;
+    margin-left: -9.6px;
+    margin-right: -9.6px;
+
+}
+.button a {
+    margin : 9.6px;
+    border: solid 2px var(--color-one);
+    padding : 12.8px 48px;
+    background-color: var(--color-yellow);
+    border-radius: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 17.6px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.button a:hover {
+    background-color: white;
+    color: var(--color-yellow);
+
+}
+
+
+/* end Section 1 */
+
+
+/* section 2 */
+.section-2 {
+    padding : 80px 0px;
+    background-color: white;
+    position: relative;
+}
+
+
+
+
+
+/*  end section 2 */

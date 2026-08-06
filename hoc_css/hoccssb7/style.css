@@ -1,0 +1,126 @@
+.main-content {
+    position: relative;    
+}
+
+header,footer,.main-content {
+    font-size : 20px;
+    position: relative;
+    
+    
+}
+
+
+header,footer,.box,article,aside {
+    text-align: center;
+}
+article,aside {
+    display: inline-block;
+    height : 240px;
+    position: relative;
+}
+
+
+article {
+    float : left;
+    width : 70%;
+
+}
+aside {
+    float : right;
+    width: 30%;
+}
+
+
+.fix {
+    clear : both;
+
+}
+
+header {
+    background-color: #92DFC8;
+}
+
+footer {
+    background-color: #EECBF3;
+}
+
+article {
+    background-color: #CAEFF2;
+}
+
+aside {
+    background-color: #F2D8CA;
+}
+
+.parent-box {
+    font-size: 0;
+}
+.box {
+    background-color: #F2F1CA;
+
+    width: calc(25% - 6px);
+    margin-right: 8px;
+    height : 50px;
+    font-size : 16px;
+    box-sizing: border-box;
+    height:  75px;
+
+    display: inline-block;
+    margin-top : 8px;
+    margin-bottom: 8px;
+    
+}
+
+.box4 {
+    margin-right: 0;
+}
+
+header,footer {
+    height: 40px;
+}
+
+.content {
+
+    width: 70px ;
+    position: absolute;
+
+    left : calc(50% - 35px);
+    top : calc(50% - 10px);
+
+}
+
+@media screen and (max-width : 480px) {
+    header {
+        display: none;
+    }
+
+    article,aside {
+        display: block;
+        width: 100%;
+
+    }
+    .box {
+        width: calc(50% - 6px);
+        margin-right: 8px;
+    }
+    .box2 , .box4 {
+        margin-right: 0;
+    }
+
+    .box3 , .box4 {
+        margin-top: 0;
+    }    
+}
+
+@media screen and (max-width : 320px) {
+     .box{
+        display : block;
+        width: 100%;
+    }
+
+    .box1,.box2,.box3,.box4 {
+        margin-left:0;
+        margin-right: 0;
+    }
+
+}

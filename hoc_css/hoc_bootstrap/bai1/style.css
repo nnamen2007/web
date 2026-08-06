@@ -1,0 +1,30 @@
+.container {
+    background-color: orange;
+}
+
+.container .row {
+    background-color: gray;
+    margin-top: 10px;
+}
+
+.container .row .col-1 {
+    font-size : 20px;
+    
+}
+
+.section-2 {
+    background-color: #F0F2F5;
+    padding : 100px 0px;
+
+}
+
+
+.section-2 .inner-content {
+    background-color: white;
+    padding : 20px;
+    font-size: 18px;
+}
+
+.section-2 .row .col-md-6 {
+    margin-bottom: 20px;
+}

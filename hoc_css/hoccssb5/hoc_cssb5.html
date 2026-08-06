@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        div + p {
+            /* bộ chọn tổ hợp */
+            background-color: yellow;
+            /* bộ chọn anh chị em liền kề
+            trong ví dụ này trình duyệt sẽ tìm thằng p nào cùng cấp với thẻ div và ngay sau thẻ div
+            nếu ngay sau thẻ div mà không tìm thấy thẻ p nào thì sẽ không có gì xảy ra cả.
+            */
+        }
+        
+        div ~ p {
+            background-color: aqua;
+            /* bộ chọn anh chị em chung
+            về cách tìm kiếm thì giống cách bộ chọn trên nhưng thay vì chỉ tìm 1 thẻ thì sẽ tìm tất cả cách thẻ
+            */
+
+        }
+
+        div > p {
+            /* 
+            bộ chọn con
+            thẻ div sẽ tìm tất cả các thẻ p là cấp con đầu tiên của thẻ div để css
+             */
+            background-color: rgb(185, 147, 98);
+        }
+
+        div p {
+            background-color: mediumpurple;
+            /* 
+            bộ chọn hậu duệ 
+            tất cả các thẻ p là thẻ con của div sẽ đều được css
+            */
+        }
+
+        /* bộ chọn lớp giả (1 dấu 2 chấm) */
+
+
+        a:link{
+            color: black;
+        }
+        a:visited {
+            color :red;
+
+        }
+        button {
+            background-color: red;
+        }
+
+        button:hover {
+            background-color: azure;
+
+        }
+        button:active {
+            background-color: green;
+        }
+/* 
+        ul li:first-child {
+           list-style-type: circle;
+        
+        }
+
+        ul li:last-child {
+            list-style-type: decimal;
+        }
+
+        ul li:nth-child(2n+1) {
+            list-style-type: lower-alpha;
+        } */
+
+        /* bộ chọn phần tử giả (2 ấu 2 chấm)
+        
+        */
+
+        .container::after {
+            content: "nội dung đằng sau";
+            background-color: orange;
+            padding-top: 10px;
+            display: inline-block;
+
+        }
+
+        .container::before {
+            content : "nội dung đằng trước";
+            
+            background-image: linear-gradient(90deg,red,blue);
+            padding-bottom: 10px;
+        }
+
+        ul li::marker {
+            /* áp dụng cho các đầu mục của li */
+            color :red;
+            font-size:20px;
+
+        }
+
+        .text-orange::selection {
+            /* khi bôi đen vào */
+            color:red;
+            background-color: chartreuse;
+            
+
+        }
+
+        /* thuộc tính opacity
+        ví dụ opacity : 0.6 thì element sẽ mờ đi 40%;
+        
+        */
+
+
+    </style>
+    <p>Noi dung 0</p>
+
+    <div>
+        <p>nội dung 1</p>
+        <p>nội dung 2</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, officiis aut labore consequatur sit ut voluptatum corporis repudiandae omnis dicta aspernatur eveniet esse cupiditate accusantium odit sapiente dolore a fugiat?</p>
+
+        </div>
+    </div>
+
+    <!-- <h2>nội dung h2</h2> -->
+    <p>nội dung 3</p>
+    <p>nội dung 4 </p>
+
+    <br>
+    <a href="https://leetcode.com/problemset/" target="_blank">link sang trang nao do</a>
+
+    <br>
+
+    <button>button</button>
+
+    <ul>
+        <li>muc1</li>
+        <li>muc2</li>
+        <li>muc3</li>
+        <li>muc4</li>
+        <li>muc5</li>
+        <li>muc6</li>
+        <li>muc7</li>
+        <li>muc8</li>
+    </ul>
+
+    <div class="container">
+        noi dung 1;
+    </div>
+
+    <p class="text-orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi earum qui animi et minima, cum, laborum dolorum expedita amet veniam doloribus nobis ea ab eaque magni provident eum adipisci eligendi!</p>
+
+    
+</body>
+</html>

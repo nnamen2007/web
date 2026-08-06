@@ -1,0 +1,92 @@
+ul {
+    list-style-type: circle;
+    /* 
+    circle : hình tròn đen
+    square :vuông
+    disclosure-closed : hình hình tam giác trỏ sang phải
+    none : bị ẩn
+    upper/lower roman;
+    upper/lower alpha:
+    */
+
+    list-style-position: outside;
+    /* gạch đầu dòng nằm trong/ngoài khối tùy vào việc chọn inside hay outside */
+}
+
+table ,th,td{
+    border: solid 2px black;
+    border-style: dotted;
+    
+}
+
+th,td {
+    padding : 10px;
+    
+    
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    /* để viền chỉ 1 đường kẻ thôi */
+}
+
+th {
+    background-color: orange;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.inline {
+    background-color: greenyellow;
+    /* kiểu hiển thị inline không thể đặt được chiều rộng và chiều cao */
+    padding-left: 10px;
+    padding-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* không thể thêm được padding và margin cho top và bottom */
+
+
+}
+.block {
+    background-color: orange;
+    padding: 10px;
+    /* đặt được padding cho bên trên và bên dưới */
+    display: block;
+    border: solid 1px;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin:auto;
+
+}
+
+.inline-block {
+    background-color: aquamarine;
+    display: inline-block;
+    padding: 10px;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    visibility: hidden;
+
+    /* 
+    hiển thị inline nhưng lại đặt được chiều dài chiều rộng
+    đặt margin và padding cho trên và dưới
+     */
+
+
+}
+
+/* 
+còn kiểu hiển thị là none là sẽ ẩn hẳn đi và không chiếm phần diện tích nào trên màn hình
+
+visibility : hidden
+là ẩn nội dung đi vấn chiếm 1 phần diện tích tương ứng
+
+*/

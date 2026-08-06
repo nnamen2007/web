@@ -1,0 +1,65 @@
+.inner-content img {
+    width : 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.inner-content ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 0;
+
+}
+
+
+.section-2 .inner-content ul li {
+    position: relative;
+    padding-left : 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.inner-content ul li::before {
+    content: "\f560";
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    padding-right : 20px;
+    color: green;
+    position: absolute;
+    left : 0;
+
+}
+
+.section-2 {
+    margin-top: 100px;
+    margin-bottom : 100px;
+}
+
+
+.section-3 .inner-content {
+    padding: 30px;
+    
+}
+
+.section-3 .inner-content h4,p {
+    padding-bottom: 4px;
+}
+
+.section-3 .row .column {
+    border-left: 1px solid #EEEEEE;
+    border-top: 1px solid #EEEEEE;
+}
+
+.section-3 .row .column:nth-child(3) , .column:nth-child(6) {
+    border-right: 1px solid #EEEEEE;
+}
+
+.section-3 .row .column:nth-child(4) , .column:nth-child(5) , .column:nth-child(6) {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+
+
+
+

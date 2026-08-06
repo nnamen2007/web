@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method ="">
+        <label for="fullname">nhập tên : </label>
+        <input type="text" name="ho_ten" autocomplete="off" id="fullname">
+        <input type= "submit" value="gui">
+        <br>
+        <label for="Mausac">Color : </label>
+
+        <select size="1" name="Color" id="Mausac" multiple>
+            <option value="Yellow" selected>Yellow</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+        </select>
+
+        <br>
+        <label for="feedback">textarea : </label>
+        <textarea name="feedback" id="feedback" rows="3" cols="45"></textarea>
+
+        <button>gui</button>
+        <br>
+        <label for="password">password : </label>
+        <input type="password" id="password">
+        <br>
+        <label for="number">number: </label>
+        <input type="number" id="number">
+        <br>
+        <label for="date">date : </label>
+        <input type="date" id="date">
+        <br>
+        <label for="time">time : </label>
+        <input type = "time" id="time">
+        <br>
+        <label for="datetime">datetime-locals : </label>
+        <input type="datetime-local" name="datetime" id="datetime">
+        <br>
+        <label for="file">file : </label>
+        <input type="file" name="file" id="file">
+        <br>
+        <label for="">radio : </label>
+        <input type="radio" name="" id="">
+        <br>
+
+        <label for="">range : </label>
+        <input type="range" step="5" max="100" min="0">
+        <br>
+        
+        <label>checkbox : </label>
+        <input type="checkbox" name="check" id="checkbox">
+        <br>
+
+        <label for="">color : </label>
+        <input type="color" name="" id="">
+        <br>
+        <label for="">so luong san pham</label>
+        <input type="number" name="" id="" min="1" max="9">
+
+    </form>
+
+    <form action="https://www.w3schools.com/action_page.php">
+        <input type="checkbox" name="language" id="" value="C++">
+        <label for="">C++</label>
+        <br>
+        
+        <input type="checkbox" name="language" id="" value="C">
+        <label for="">C</label>
+        <br>
+        <input type="checkbox" name ="language" , id="" value="Python">
+        <label for="">Python</label>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <!-- 
+    action : thuộc tính này có giá trị là 1 đường đẫn, ta sẽ gửi action này lên server
+    method : 
+    GET : Nối dữ liệu biểu mẫu vào url, theo cặp name/value (mặc định method form là phương thức get)
+    không bao giờ sử dụng get để gửi dữ liệu bảo mật như tài khoản mật khẩu 
+    độ dài url giới hạn 2048 kí tự
+
+    POST : dữ liệu không hiển thị lên url
+    post không giới hạn về kích thước và có thể dùng để gửi 1 lượng lớn dữ liệu
+
+    autocomplete (thuộc tính của input) : (on/off) mặc định là on (gợi ý nội dung điền vào form)
+    novalidate: không cần xác minh tính hợp lệ của input
+    giá trị for của label = id của input tương ứng
+
+    ----------
+    Thẻ select
+    loại chọn và có lựa chọn drop down
+    dùng thẻ select
+    bên trong select có các thẻ option
+    muốn option nào được mặc định chọn thì sẽ để thẻ đó với thuộc tính selected
+    sử dụng thuộc tính size để quyết định số lượng option dropdown
+    sử dụng thuộc tính multiple để quyết định số option được chọn
+
+    ---------
+    Thẻ textarea
+    để nhập text nhiều dòng vào
+    sử dụng rows và cols để quyết định kích thước của ô text
+
+    ---------
+    Thẻ button
+    giống thẻ input kiểu submit nhưng mà thẻ button có thể dùng được nhiều nơi, không cần thẻ bắt buộc nằm trong form
+
+    -------------
+    Các thuộc tính thẻ input
+    value : giá trị ban đầu của trường đầu vào
+    readonly : trường đầu vào chỉ đọc, không thể sửa nhưng vẫn có thể gửi lên server
+    disabled : trường đầu vào sẽ không gửi được lên server
+    maxlength : số lượng kí tự tối đa của trường đầu vào
+    min max : các giá trị tối thiểu và tối đa của trường đầu vào
+    required : các trường bắt buộc phải điền
+
+    -->
+</body>
+</html>

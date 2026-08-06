@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.wrapper {
+    width : 400px;
+    height : 500px;
+    border : solid 1px black;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left : -10%;
+    border-radius: 10px;
+    box-shadow: 0 0 60px #000;
+}
+
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+
+}
+
+.input-group {
+    width: 320px;
+    height: 40px;
+    margin-top : 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    position: relative;
+    display: flex;
+
+
+
+}
+
+input {
+    padding : 0px 10px 0px 35px;
+    height: 40px;
+    background-color: transparent;
+    border: solid 1px white;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    color: whitesmoke;
+
+
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.3;
+
+}
+
+i {
+    color : white;
+    font-size: 16px;
+    position: absolute;
+    left : 7px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.forgot-pass {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border : none;
+    border-radius: 5px;
+    background-color: #00C2A7;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    color:  #00C2A7;
+    transition: 0.5s;
+
+}
+
+.sign-link {
+    font-size : 14px;
+    text-align: center;
+
+}
+.sign-link p {
+    color : white;
+    
+}
+
+.sign-link a {
+    color: #00C2A7;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+}

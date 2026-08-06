@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1 {
+            display : flex;
+            
+        }
+
+        .pig-image {
+            width: 50%;
+            height : auto;
+            object-fit: cover;
+        }
+
+        .pig1 {
+            order : 2;
+        }
+
+        .pig2 {
+            order : 1;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <p id="demo"></p>
+
+
+    <h2>JavaScript HTML DOM</h2>
+    <p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+    <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname" value="Nam"><br>
+        Last name: <input type="text" name="lname"><br><br>
+        <input type="submit" value="Anh">
+    </form>
+
+    <p>These are the values of each element in the form:</p>
+    <p id="text"></p>
+
+    <p id="demo"></p>
+
+    <button onclick="overWrite()">click</button>
+
+    <button onclick="imageController()">Process image</button>
+
+
+    <div class="box1">
+        <img src="https://minhducpc.vn/uploads/images/qa/50-hinh-nen-con-heo-cho-may-tinh-de-thuong-cute-h3.jpg" alt="" class="pig-image pig1">
+
+        <img src="https://png.pngtree.com/png-clipart/20250501/original/pngtree-adorable-cartoon-piglet-pink-cute-happy-smiling-big-eyes-on-black-png-image_20921133.png" alt="" class="pig-image pig2">
+    </div>
+
+    <script>
+        const mypara = document.getElementById("demo").innerHTML = "Hello World";
+
+        const x = document.forms["frm1"];
+        let text = "";
+
+        for (let i = 0; i < x.length; i++) {
+            text += x.elements[i].value + "<br>";
+            
+        }
+
+        const in4 = document.getElementById("text");
+
+        const imageList = document.getElementsByClassName("pig-image");
+
+        
+
+        in4.innerHTML = text;
+        
+        let signal = false;
+
+        function changeCss() {
+
+            if (!signal) {
+                in4.style.color = 'blue';
+                signal = true;
+            } else {
+                in4.style.color = 'red';
+                signal = false;
+            }
+        }
+       
+        let currentAngle = 0;
+
+        function imageController() {
+
+            
+            currentAngle += 45;
+            for (let i = 0 ; i < imageList.length ; i++) {
+              
+
+              imageList[i].style.rotate = currentAngle + 'deg';
+
+            }           
+        
+        }
+
+
+
+    </script>
+</body>
+
+</html>

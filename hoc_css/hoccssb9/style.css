@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color : yellow;
+    
+}
+
+
+.item {
+    width : 100px;
+    height: 50px;
+    background-color : greenyellow;
+
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

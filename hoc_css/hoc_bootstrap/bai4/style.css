@@ -1,0 +1,5 @@
+.table-hover {
+    --bs-table-hover-bg : yellow;
+    --bs-table-hover-color : red;
+}
+

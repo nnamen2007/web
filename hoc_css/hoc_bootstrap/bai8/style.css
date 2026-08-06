@@ -1,0 +1,29 @@
+.custom-link {
+    
+    transition: 0.3s ease-in-out;
+}
+
+
+.custom-link:hover {
+    background-color: brown;
+}
+
+
+@media screen and (min-width : 768px) {
+
+    header .navbar .menu {
+        display : flex;
+        justify-content : center;
+        width : 100%;
+        padding-top : 0;
+        padding-bottom : 0;
+
+        margin-left : 100px;
+    }
+
+    header .navbar .menu .custom-link {
+        padding-left: 25px;
+        padding-right:25px;
+        font-size : 18px;
+    }
+}

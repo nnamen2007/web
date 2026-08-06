@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+
+        .element-parent {
+            border: 4px solid red;
+            border-radius: 4px;
+            margin-bottom: 100px;
+        }
+
+        .element-child {
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .element-A {
+            background-color: yellowgreen;
+            height: 100px;
+            float: left;
+            /* đưa khối A nằm sang trái của phần tử cha */
+
+
+        }
+
+        .element-B {
+            background-color: blue;
+            height: 150px;
+            /* clear: left; */
+            /* ngăn chặn phần tử B chiếm không gian khi phần tử A float left
+            A phải sử dụng float left thì B clear left mới ăn;
+            
+            */
+
+            float: right;
+        }
+
+        .element-C {
+            background-color: aquamarine;
+            height: 200px;
+            clear: both;
+            /* khi cả A float trái còn B thì float phải thì C clear both sẽ không chiếm chỗ cả A và B
+            khi vấn đề float left right xảy ra nhiều hơn 3 phần tử thì ta tạo ra 1 phần tử khác và để nó là thuộc tính clear : both;
+            */
+        }
+
+        .layout-pattern {
+            border: solid blue 5px;
+        }
+
+        .child {
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .sidebar,
+        .article {
+            height: 200px;
+            float : left;
+            
+
+        }
+
+        .header,
+        .footer {
+            height: 40px;
+            background-color: orangered;
+        }
+
+        .sidebar {
+            background-color: cyan;
+            width : 25%;
+        }
+        
+        .article {
+            background-color: chartreuse;
+            width: calc(50% - 10px) ;
+            margin-left: 5px;
+            margin-right: 5px;
+            
+        }
+
+
+        .sidebar-2 {
+            float : right;
+        }
+
+        .fix {
+            clear : both;
+        }
+
+        li {
+            color: green !important;
+            /* tính đặc hiệu s = 1 */
+        }
+         li.hello-1 {
+            color : blue;
+            /* tính đặc hiệu s = 11 > 1
+            tuy nhiên ở trên đánh important nên nó được ưu tiên hơn
+            */
+
+         }
+
+         .cha {
+            width : 100vw;
+            height: 300px;
+            background-color: yellow;
+            position: relative;
+         }
+
+         .con {
+            width : 30%;
+            height : 40%;
+            --width : 30%;
+            --height : 40%;
+            background-color: orange;
+            position: absolute;
+            left : calc(50% - 0.5*(var(--width)));
+            /* có dấu cách giữa toán tử và đơn vị */
+            top : calc(50% - 0.5*(var(--height)));
+            text-align: center;
+            
+
+         }
+     
+    </style>
+
+    <div class="element-parent">
+        <div class="element-child element-A">phần tử A</div>
+        <div class="element-child element-B">phần tử B</div>
+        <div class="element-child element-C">phần tử C</div>
+    </div>
+
+    <div class="layout-pattern">
+        <div class="child header">Header</div>
+        <div class="main">
+            <div class="child sidebar sidebar-1">sidebar-1</div>
+            <div class="child article">Article</div>
+            <div class="child sidebar sidebar-2">siderbar-2</div>
+            <div class="fix"></div>
+            
+        </div>
+        <div class="child footer">footer</div>
+
+    </div>
+
+    <ul>
+        <li class="hello-1">hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+    <div class ="cha">
+        <div class="con">box con</div>
+    </div>
+
+</body>
+
+</html>

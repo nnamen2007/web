@@ -1,0 +1,138 @@
+.image {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3B1l9eePFiElxzA2EnaiKJr6PFsPmqGMGg&s);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.box1 {
+    margin-top : 100px;
+    position: relative;
+}
+
+.box1 , .box2 {
+    background-color: orange;
+    width: 100px;
+    height:150px;
+    font-size: 20px;
+    border: solid 4px;
+}
+
+.box2 {
+    position: relative;
+    /* Vị trí tương đối so với vị trí mặc định và áp dụng được các thuộc tính top, right, bottom, left.
+    ví dụ left là đẩy từ trái sang phải
+    còn bottom là đẩy từ dưới lên trên
+    
+    */
+    
+    top : 10px;
+    left : 100px; 
+    position : sticky;
+    display : none;
+    /* kết hợp giữa relative và fixed */
+
+    /* 
+    trình duyệt ưu tiên top > bottom,left > right;
+    nghĩa là khi cả 2 cùng xuất hiện thì cái nào lớn thì sẽ được ưu tiên
+    */
+}
+
+.box3 {
+    position:absolute;
+    width: 50%;
+    height:50%;
+    background-color: aquamarine;
+    /* 
+    Vị trí tuyệt đối cho các thành phần theo thành phần bao ngoài hoặc cửa sổ trình duyệt.
+    box cha của box có vị trí là absolute thì box cha của nó không được để static
+    */
+    left : 10px;
+    bottom: 10px;
+    
+
+}
+
+.box4 {
+    position: fixed;
+    top : 10px;
+    left : 10px;
+    background-color: red;
+    width: 50px;
+    height: 100px;
+    /* 
+    Được định vị so với khung nhìn (viewport), có nghĩa là nó luôn ở một vị trí cố định ngay cả khi trang được cuộn. Các thuộc tính top, right, bottom và left được sử dụng để định vị element.
+     */
+}
+
+.header {
+    background-color: orange;
+    text-align: center;
+    position : sticky;
+    left : 0px;
+    top : 0px;
+    z-index: 1000;
+
+    /* 
+    z-index chỉ sử dụng với các element có position khác static
+    element nào được html trước thì sẽ ở dưới và ngược lại
+    tăng z-index khi ta muốn thằng element nào ở trên cùng
+     */
+
+}
+
+.example {
+    font-size : 0px;
+    border : solid 1px;
+    margin-bottom: 100px;
+}
+
+.hidden-overflow-box, 
+.visible-overflow-box, 
+.auto, 
+.scroll-overflow-box {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25%;
+    vertical-align: top;
+    font-size : 16px;
+    text-align: center;
+    background-color: yellow;
+
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    background-color: lightblue;
+    height : 150px;
+    width : 100%;
+    border : solid 1px black;
+}
+
+.text1 {
+    overflow: visible; 
+    /* mặc định */
+}
+
+.text2 {
+    overflow: hidden;
+    /* đoạn nội dung nào thừa thì vứt hết */
+}
+
+.text3 {
+    overflow: scroll;
+    /* thừa cả dọc hoặc ngang thì sẽ hiển thị thanh scroll (hiện cả 2 thanh scroll) */
+}
+
+.text4 {
+    overflow: auto;
+    /* nếu đoạn text ngắn thì sẽ không hiện thanh scroll
+    nếu nội dung dài thì sẽ tự hiện thanh scroll (chỉ theo chiều dọc)    
+    */
+}
+
+
+

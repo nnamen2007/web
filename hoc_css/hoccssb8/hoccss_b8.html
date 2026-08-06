@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 300px;
+            background-color: blueviolet;
+            /* padding-top : 20px;
+            padding-bottom: 20px; */
+            border-radius: 5px;
+            display: flex;
+            /* chiều rộng container = 100% */
+            /* display: inline-flex; */
+
+            /* chiều rộng các item = chiều rộng các item */
+            flex-direction: row;
+            flex-wrap: nowrap;
+            /* mặc định không xuống hàng */
+
+            flex-wrap: wrap;
+
+            /* khi tổng chiều ngang các item > chiều ngang container thì item sẽ tự động xuống dòng
+
+            có 1 cái nữa là wrap-reverse, thay vì tự động xuống dòng thì nó sẽ tự nhảy lên trên
+            
+            */
+
+            justify-content: space-evenly;
+            /* căn theo chiều ngang (main a-) */
+            /*fcenter : căn giữa cho item
+            flex-start : mặc định
+            flex-end : căn phải cho item
+            space-between : các item cách nhau bằng 1 khoảng trắng,item đầu và item cuối nằm sát lề
+
+            space-around : khoảng cách giữa item và lề = 1/2 khoảng cách giữa item và item
+
+            space-evenly : khoảng cách giữa item và lề = khoảng cách giữa item và item
+
+             */
+
+             align-items: flex-start;
+             /* căn theo trục cross-axix (căn cho 1 dòng) */
+             /* 
+             stretch : các item sẽ tự động tăng chiều cao cho bằng box cha,tuy nhiên sẽ ưu tiên height của item hơn
+             flex-start : bắt đầu từ lề trên
+             flex-end : bắt đầu từ lề dưới
+             center : căn giữa;
+
+             */
+
+  
+
+
+             /* giống align-item thôi nhưng sẽ căn cho nhiều dòng */
+
+
+             /* các giá trị giống hệt justify content chỉ khác là căn theo chiều dọc */
+        }
+
+        .item:nth-child(2) {
+            align-self: flex-end;
+            order: 0;
+            /* sử dụng order để đổi vị trí cho các item (thứ tự) */
+        }
+        .item:nth-child(1) {
+            order: 1;
+        }
+
+        .item:nth-child(3) {
+            order:2;
+        }
+
+        .item {
+            background-color: orange;
+            border : 1px solid whitesmoke;
+            padding : 10px;
+            /* margin: 10px; */
+            font-size: 28px;
+            color : black;
+            border-radius: 5px;
+            text-align: center;
+            width : 150px;
+            height : 100px;
+        }
+
+
+
+    </style>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <!-- <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div> -->
+    </div>
+
+</body>
+</html>
